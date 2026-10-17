@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+.maindev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  gap: 20px;
+  border-radius: 15px;
+  padding-bottom: 40px;
+}
+img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.lighted {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+h1 {
+  font-family: "Fraunces";
+  color: hsl(212, 21%, 14%);
+}
+.secdev {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 20px;
+  gap: 20px;
+}
+.third {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.price {
+  font-family: "Fraunces";
+  font-weight: bold;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+.oldp {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.buy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px 0px;
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+}
+.cart {
+  width: 15px;
+  height: 15px;
+}
+
+.attribution {
+  margin-top: 10px;
+}
+
+@media (min-width: 640px) {
+  body {
+    justify-content: center;
+    padding: 0;
+  }
+  .maindev {
+    flex-direction: row;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+  }
+  img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+picture {
+  height: 450px;
+}
